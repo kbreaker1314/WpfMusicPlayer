@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMusicPlayer"
         mc:Ignorable="d"
-        Title="Music Player" Height="700" Width="500" Background="#FFAFEEEE">
+        Title="Music Player" Height="700" Width="500" Background="#FFAFEEEE"
+        BorderThickness="4">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -25,9 +26,12 @@
                 <ImageBrush ImageSource="music-note-icon-34243.jpg"/>
             </TextBlock.Background>
         </TextBlock>
-        <Button  Content="Play" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Margin="10"/>
-        <Button  Content="Pause" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Margin="10"/>
-        <Button  Content="Stop" Grid.Column="3" Grid.Row="2" VerticalAlignment="Bottom" Margin="10"/>
+        <Button Content="Open File" Grid.Column="0" Grid.Row="0" VerticalAlignment="top" Margin="10 20" Click="Open_file_button"/>
+        <Button  Content="Play" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Margin="10" Click="Play_button"/>
+        <Button  Content="Pause" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Margin="10" Click="Pause_button"/>
+        <Button  Content="Stop" Grid.Column="3" Grid.Row="2" VerticalAlignment="Bottom" Margin="10" Click="Stop_button"/>
+        
+     
     </Grid>
     
 </Window>
