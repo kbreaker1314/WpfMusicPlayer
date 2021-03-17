@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMusicPlayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Music Player" Height="700" Width="500" Background="#FFAFEEEE">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="2" Grid.Row="1" Width="50" Height="50" >
+            <TextBlock.Background>
+                <ImageBrush ImageSource="music-note-icon-34243.jpg"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button  Content="Play" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Margin="10"/>
+        <Button  Content="Pause" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Margin="10"/>
+        <Button  Content="Stop" Grid.Column="3" Grid.Row="2" VerticalAlignment="Bottom" Margin="10"/>
     </Grid>
+    
 </Window>
